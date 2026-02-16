@@ -1,0 +1,1064 @@
+INSERT INTO manual_audits (
+ dealer_id, dealer_name, dealer_details, dealer_consolidated_summary,
+ date, month, time, shift, compliance_status,
+ level_1, sub_category, checkpoint, photo_url,
+ confidence_level, feedback, language, country, zone,
+ email, password, created_at, updated_at
+) VALUES
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 09:05:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Floor Cleanliness',
+ 'https://images.unsplash.com/photo-1581090700227',0.92,
+ 'Showroom floor appears clean and reflective with no visible dust.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 09:12:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Cleanliness','Reception Desk Hygiene',
+ 'https://images.unsplash.com/photo-1582719478185',0.78,
+ 'Cluttered desk with visible dust and unclean surface.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 09:20:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Seating Cleanliness',
+ 'https://images.unsplash.com/photo-1556911220',0.85,
+ 'Seating area is clean with no stains or litter.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 09:35:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Floor Cleanliness',
+ 'https://images.unsplash.com/photo-1581092580497',0.88,
+ 'Oil stains and debris detected on the service bay floor.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 09:45:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Workshop','Tool Organization & Cleanliness',
+ 'https://images.unsplash.com/photo-1584467735871',0.91,
+ 'Tools are properly arranged on racks and appear clean.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 10:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Cleanliness',
+ 'https://images.unsplash.com/photo-1582719478185',0.83,
+ 'Wet floor and visible dirt near wash basin.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 10:10:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','Fire Extinguisher Area Cleanliness',
+ 'https://images.unsplash.com/photo-1603791440384',0.94,
+ 'Fire extinguisher area is clean and unobstructed.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR101','Stellantis Auto Hub','Authorized Car Dealer','Daily Facility Audit',
+ '2026-02-10','February','2026-02-10 10:20:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Safety','Emergency Exit Cleanliness',
+ 'https://images.unsplash.com/photo-1581091215367',0.89,
+ 'Emergency exit path blocked by waste materials.',
+ 'English','India','South Zone','audit@stellantis.com','secure@123',
+ now(), now()),
+('DLR-AU-901','Stellantis Sydney Central','Passenger vehicle showroom with glass frontage',
+ 'Customer-facing area hygiene assessment',
+ '2026-02-10','February','2026-02-10 08:42:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Floor Cleanliness',
+ 'https://images.unsplash.com/photo-1581090700227',0.94,
+ 'Floor surface appears polished with no dust, stains, or debris detected.',
+ 'English','Australia','APAC',
+ 'audit.syd@stellantis.com','hashed_pwd',
+ now(), now()),
+
+('DLR-AU-901','Stellantis Sydney Central','Passenger vehicle showroom with glass frontage',
+ 'Customer-facing area hygiene assessment',
+ '2026-02-10','February','2026-02-10 08:50:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Cleanliness','Reception Desk Hygiene',
+ 'https://images.unsplash.com/photo-1582719478185',0.81,
+ 'Loose papers, dust accumulation, and food residue observed on desk surface.',
+ 'English','Australia','APAC',
+ 'audit.syd@stellantis.com','hashed_pwd',
+ now(), now()),
+
+('DLR-DE-412','Stellantis Munich West','Luxury vehicle sales and service facility',
+ 'Customer waiting area audit',
+ '2026-02-10','February','2026-02-10 09:10:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Seating Cleanliness',
+ 'https://images.unsplash.com/photo-1556911220',0.87,
+ 'Seating surfaces appear clean with no visible stains or litter.',
+ 'English','Germany','EMEA',
+ 'audit.muc@stellantis.com','hashed_pwd',
+ now(), now()),
+
+-- 4 Workshop floor
+('DLR-DE-412','Stellantis Munich West','Luxury vehicle sales and service facility',
+ 'Workshop hygiene evaluation',
+ '2026-02-10','February','2026-02-10 09:28:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Floor Cleanliness',
+ 'https://images.unsplash.com/photo-1581092580497',0.92,
+ 'Oil patches and scattered metal debris detected near lift area.',
+ 'English','Germany','EMEA',
+ 'audit.muc@stellantis.com','hashed_pwd',
+ now(), now()),
+
+('DLR-FR-233','Stellantis Lyon Service','Multi-brand service-only center',
+ 'Technician workspace cleanliness',
+ '2026-02-10','February','2026-02-10 09:40:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Workshop','Tool Organization & Cleanliness',
+ 'https://images.unsplash.com/photo-1584467735871',0.90,
+ 'Hand tools stored in designated racks with no visible oil residue.',
+ 'English','France','EMEA',
+ 'audit.lyon@stellantis.com','hashed_pwd',
+ now(), now()),
+
+('DLR-FR-233','Stellantis Lyon Service','Multi-brand service-only center',
+ 'Waste management inspection',
+ '2026-02-10','February','2026-02-10 09:55:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Bin Overflow',
+ 'https://images.unsplash.com/photo-1581578731548',0.88,
+ 'Waste bins observed overflowing with used gloves and packaging material.',
+ 'English','France','EMEA',
+ 'audit.lyon@stellantis.com','hashed_pwd',
+ now(), now()),
+
+('DLR-US-788','Stellantis Dallas North','High-volume service and delivery hub',
+ 'Hazardous material area audit',
+ '2026-02-10','February','2026-02-10 10:05:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Safety','Chemical Storage Cleanliness',
+ 'https://images.unsplash.com/photo-1590650516494',0.91,
+ 'Chemical containers placed on floor with visible spills around shelves.',
+ 'English','United States','NA',
+ 'audit.dallas@stellantis.com','hashed_pwd',
+ now(), now()),
+
+
+('DLR-US-788','Stellantis Dallas North','High-volume service and delivery hub',
+ 'Fire safety compliance',
+ '2026-02-10','February','2026-02-10 10:18:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','Fire Extinguisher Area Cleanliness',
+ 'https://images.unsplash.com/photo-1603791440384',0.95,
+ 'Fire extinguisher mounted correctly with clean and unobstructed access.',
+ 'English','United States','NA',
+ 'audit.dallas@stellantis.com','hashed_pwd',
+ now(), now()),
+
+
+('DLR-JP-554','Stellantis Tokyo East','Urban dealership with limited floor space',
+ 'Emergency route inspection',
+ '2026-02-10','February','2026-02-10 10:30:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Safety','Emergency Exit Path Cleanliness',
+ 'https://images.unsplash.com/photo-1581091215367',0.89,
+ 'Exit pathway partially blocked by cleaning equipment.',
+ 'English','Japan','APAC',
+ 'audit.tokyo@stellantis.com','hashed_pwd',
+ now(), now()),
+
+('DLR-JP-554','Stellantis Tokyo East','Urban dealership with limited floor space',
+ 'Washroom hygiene audit',
+ '2026-02-10','February','2026-02-10 10:45:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Cleanliness',
+ 'https://images.unsplash.com/photo-1582719478185',0.86,
+ 'Wet flooring and stains detected near wash basins.',
+ 'English','Japan','APAC',
+ 'audit.tokyo@stellantis.com','hashed_pwd',
+ now(), now());
+(
+ 'DLR-UK-305','Stellantis London South','Urban passenger car dealership',
+ 'Customer entry area hygiene check',
+ '2026-02-11','February','2026-02-11 08:30:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Entrance Floor Cleanliness',
+ 'https://images.unsplash.com/photo-1523413651479',0.93,
+ 'Entrance floor appears clean with no mud marks or litter detected.',
+ 'English','United Kingdom','EMEA',
+ 'audit.london@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-UK-305','Stellantis London South','Urban passenger car dealership',
+ 'Glass maintenance inspection',
+ '2026-02-11','February','2026-02-11 08:42:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Glass Panels & Windows',
+ 'https://images.unsplash.com/photo-1503387762',0.85,
+ 'Fingerprints and dust buildup visible on showroom glass panels.',
+ 'English','United Kingdom','EMEA',
+ 'audit.london@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-IT-118','Stellantis Milan Centro','Premium car sales showroom',
+ 'Customer lounge hygiene audit',
+ '2026-02-11','February','2026-02-11 09:05:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Customer Lounge Cleanliness',
+ 'https://images.unsplash.com/photo-1554995207',0.91,
+ 'Sofas and tables appear clean with no visible spills or waste.',
+ 'English','Italy','EMEA',
+ 'audit.milan@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-IT-118','Stellantis Milan Centro','Premium car sales showroom',
+ 'Pantry area inspection',
+ '2026-02-11','February','2026-02-11 09:18:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Pantry & Food Area Cleanliness',
+ 'https://images.unsplash.com/photo-1493770348161',0.88,
+ 'Food crumbs and unclean countertops detected in pantry area.',
+ 'English','Italy','EMEA',
+ 'audit.milan@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-CA-667','Stellantis Toronto North','High-capacity sales and service center',
+ 'Service bay inspection',
+ '2026-02-11','February','2026-02-11 09:40:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Oil Spill Detection',
+ 'https://images.unsplash.com/photo-1581090700227',0.94,
+ 'Fresh oil spill detected beneath vehicle service area.',
+ 'English','Canada','NA',
+ 'audit.toronto@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-CA-667','Stellantis Toronto North','High-capacity sales and service center',
+ 'PPE storage audit',
+ '2026-02-11','February','2026-02-11 09:55:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','PPE Storage Cleanliness',
+ 'https://images.unsplash.com/photo-1584467735871',0.90,
+ 'Safety gloves and helmets properly stored in designated racks.',
+ 'English','Canada','NA',
+ 'audit.toronto@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-BR-442','Stellantis São Paulo East','Large multi-brand dealership',
+ 'Waste management review',
+ '2026-02-11','February','2026-02-11 10:10:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Segregation Area',
+ 'https://images.unsplash.com/photo-1581578731548',0.87,
+ 'Mixed waste observed without proper segregation or labeling.',
+ 'English','Brazil','LATAM',
+ 'audit.saopaulo@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-BR-442','Stellantis São Paulo East','Large multi-brand dealership',
+ 'Parking area inspection',
+ '2026-02-11','February','2026-02-11 10:25:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Customer Parking Area',
+ 'https://images.unsplash.com/photo-1502877338535',0.89,
+ 'Parking slots appear clean with no debris or oil patches.',
+ 'English','Brazil','LATAM',
+ 'audit.saopaulo@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-KR-509','Stellantis Seoul Central','Urban dealership with service bays',
+ 'Locker room cleanliness audit',
+ '2026-02-11','February','2026-02-11 10:40:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Hygiene','Staff Locker Area Cleanliness',
+ 'https://images.unsplash.com/photo-1554995207',0.84,
+ 'Open lockers with clothing scattered on floor.',
+ 'English','South Korea','APAC',
+ 'audit.seoul@stellantis.com','hashed_pwd',
+ now(), now()
+),
+(
+ 'DLR-KR-509','Stellantis Seoul Central','Urban dealership with service bays',
+ 'Common passage inspection',
+ '2026-02-11','February','2026-02-11 10:55:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Common Passage Cleanliness',
+ 'https://images.unsplash.com/photo-1524758631624',0.92,
+ 'Walkways are clean and unobstructed for staff movement.',
+ 'English','South Korea','APAC',
+ 'audit.seoul@stellantis.com','hashed_pwd',
+ now(), now()
+)
+('DLR-ES-211','Stellantis Madrid Norte','Passenger vehicle sales showroom',
+ 'Front office hygiene audit',
+ '2026-02-12','February','2026-02-12 08:10:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Reception Floor Cleanliness',
+ 'https://images.unsplash.com/photo-1523413651479',0.93,
+ 'Reception flooring is clean with no visible stains or dust.',
+ 'English','Spain','EMEA','audit.madrid@stellantis.com','hashed_pwd',now(),now()),
+('DLR-ES-211','Stellantis Madrid Norte','Passenger vehicle sales showroom',
+ 'Customer desk inspection',
+ '2026-02-12','February','2026-02-12 08:22:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Customer Desk Hygiene',
+ 'https://images.unsplash.com/photo-1503387762',0.86,
+ 'Dust accumulation and paper clutter detected on desk.',
+ 'English','Spain','EMEA','audit.madrid@stellantis.com','hashed_pwd',now(),now()),
+('DLR-NL-334','Stellantis Amsterdam West','Compact urban dealership',
+ 'Waiting area audit',
+ '2026-02-12','February','2026-02-12 08:35:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Seating',
+ 'https://images.unsplash.com/photo-1554995207',0.90,
+ 'Seating area is clean with no visible debris.',
+ 'English','Netherlands','EMEA','audit.amsterdam@stellantis.com','hashed_pwd',now(),now()),
+
+('DLR-NL-334','Stellantis Amsterdam West','Compact urban dealership',
+ 'Washroom inspection',
+ '2026-02-12','February','2026-02-12 08:50:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Floor',
+ 'https://images.unsplash.com/photo-1582719478185',0.88,
+ 'Wet flooring and stains detected near wash basin.',
+ 'English','Netherlands','EMEA','audit.amsterdam@stellantis.com','hashed_pwd',now(),now()),
+('DLR-SE-407','Stellantis Stockholm Central','Premium electric vehicle showroom',
+ 'Glass maintenance audit',
+ '2026-02-12','February','2026-02-12 09:05:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Panels',
+ 'https://images.unsplash.com/photo-1524758631624',0.94,
+ 'Glass panels are clear with no smudges detected.',
+ 'English','Sweden','EMEA','audit.stockholm@stellantis.com','hashed_pwd',now(),now()),
+
+('DLR-SE-407','Stellantis Stockholm Central','Premium electric vehicle showroom',
+ 'Pantry hygiene audit',
+ '2026-02-12','February','2026-02-12 09:18:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Pantry Counter Cleanliness',
+ 'https://images.unsplash.com/photo-1493770348161',0.89,
+ 'Food crumbs and spills observed on pantry counter.',
+ 'English','Sweden','EMEA','audit.stockholm@stellantis.com','hashed_pwd',now(),now()),
+
+('DLR-MX-521','Stellantis Mexico City Norte','High-volume service dealership',
+ 'Service bay inspection',
+ '2026-02-12','February','2026-02-12 09:30:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Oil Spills',
+ 'https://images.unsplash.com/photo-1581092580497',0.92,
+ 'Oil spill detected under active service bay.',
+ 'English','Mexico','LATAM','audit.mexico@stellantis.com','hashed_pwd',now(),now()),
+
+('DLR-MX-521','Stellantis Mexico City Norte','High-volume service dealership',
+ 'Tool storage audit',
+ '2026-02-12','February','2026-02-12 09:42:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Workshop','Tool Rack Organization',
+ 'https://images.unsplash.com/photo-1584467735871',0.91,
+ 'Tools properly arranged and free from grease.',
+ 'English','Mexico','LATAM','audit.mexico@stellantis.com','hashed_pwd',now(),now()),
+
+('DLR-AR-618','Stellantis Buenos Aires Sur','Multi-brand sales and service center',
+ 'Waste management check',
+ '2026-02-12','February','2026-02-12 09:55:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Bin Overflow',
+ 'https://images.unsplash.com/photo-1581578731548',0.87,
+ 'Overflowing waste bins observed near workshop.',
+ 'English','Argentina','LATAM','audit.baires@stellantis.com','hashed_pwd',now(),now()),
+('DLR-AR-618','Stellantis Buenos Aires Sur','Multi-brand sales and service center',
+ 'Parking inspection',
+ '2026-02-12','February','2026-02-12 10:05:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Customer Parking Area',
+ 'https://images.unsplash.com/photo-1502877338535',0.90,
+ 'Parking area is clean and free of debris.',
+ 'English','Argentina','LATAM','audit.baires@stellantis.com','hashed_pwd',now(),now()),
+(
+ 'DLR-CL-701','Stellantis Santiago Centro','Urban passenger vehicle dealership',
+ 'Entry zone hygiene audit',
+ '2026-02-13','February','2026-02-13 08:05:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Entrance Mat Cleanliness',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.92,'Entrance mats are clean with no visible dust or stains.',
+ 'English','Chile','LATAM','audit.santiago@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-PL-842','Stellantis Warsaw East','Mid-size sales and service dealership',
+ 'Front desk hygiene check',
+ '2026-02-13','February','2026-02-13 08:18:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Front Desk Surface Hygiene',
+ 'https://images.unsplash.com/photo-1503387762',
+ 0.85,'Dust and fingerprints detected on desk surface.',
+ 'English','Poland','EMEA','audit.warsaw@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-AE-556','Stellantis Dubai Al Quoz','High-end showroom with service bays',
+ 'Customer lounge inspection',
+ '2026-02-13','February','2026-02-13 08:35:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Customer Lounge Seating',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.91,'Seating upholstery appears clean and well maintained.',
+ 'English','UAE','MEA','audit.dubai@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-ZA-934','Stellantis Johannesburg North','Large multi-brand dealership',
+ 'Washroom hygiene evaluation',
+ '2026-02-13','February','2026-02-13 08:55:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Sink Area',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.89,'Water splashes and soap residue detected near sinks.',
+ 'English','South Africa','MEA','audit.joburg@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-TH-388','Stellantis Bangkok Central','City dealership with compact workshop',
+ 'Service bay floor inspection',
+ '2026-02-13','February','2026-02-13 09:10:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Floor Oil Residue',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.93,'Oil residue detected beneath active vehicle lift.',
+ 'English','Thailand','APAC','audit.bangkok@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-NZ-619','Stellantis Auckland West','Modern EV-focused dealership',
+ 'Charging zone cleanliness audit',
+ '2026-02-13','February','2026-02-13 09:25:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','EV Charging Area Floor',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.94,'Charging area floor is clean and free from obstructions.',
+ 'English','New Zealand','APAC','audit.auckland@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-PT-472','Stellantis Lisbon South','Coastal passenger car dealership',
+ 'Glass surface inspection',
+ '2026-02-13','February','2026-02-13 09:40:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Door Hygiene',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.84,'Smudges and hand marks detected on glass doors.',
+ 'English','Portugal','EMEA','audit.lisbon@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-ID-853','Stellantis Jakarta Selatan','High-traffic urban dealership',
+ 'Waste handling review',
+ '2026-02-13','February','2026-02-13 09:55:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Segregation Zone',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.88,'Mixed waste observed without segregation labels.',
+ 'English','Indonesia','APAC','audit.jakarta@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-NO-214','Stellantis Oslo Central','Compact EV-focused dealership',
+ 'Entrance cleanliness inspection',
+ '2026-02-14','February','2026-02-14 08:00:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Entrance Walkway Cleanliness',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.94,'Entrance walkway is clean with no snow residue or dirt.',
+ 'English','Norway','EMEA','audit.oslo@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-NO-214','Stellantis Oslo Central','Compact EV-focused dealership',
+ 'Glass door inspection',
+ '2026-02-14','February','2026-02-14 08:12:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Automatic Glass Door Hygiene',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.86,'Hand marks and smudges detected on glass doors.',
+ 'English','Norway','EMEA','audit.oslo@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-IE-389','Stellantis Dublin South','Passenger vehicle sales and service center',
+ 'Customer waiting zone audit',
+ '2026-02-14','February','2026-02-14 08:25:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Carpet Cleanliness',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.91,'Carpet appears clean with no stains or litter.',
+ 'English','Ireland','EMEA','audit.dublin@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-IE-389','Stellantis Dublin South','Passenger vehicle sales and service center',
+ 'Refreshment station check',
+ '2026-02-14','February','2026-02-14 08:40:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Coffee Station Cleanliness',
+ 'https://images.unsplash.com/photo-1493770348161',
+ 0.89,'Spilled liquid and unclean surfaces detected near coffee machine.',
+ 'English','Ireland','EMEA','audit.dublin@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MY-502','Stellantis Kuala Lumpur North','High-traffic urban dealership',
+ 'Workshop aisle inspection',
+ '2026-02-14','February','2026-02-14 09:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Workshop Aisle Obstruction',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.92,'Loose parts and tools obstructing workshop aisle.',
+ 'English','Malaysia','APAC','audit.kl@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MY-502','Stellantis Kuala Lumpur North','High-traffic urban dealership',
+ 'PPE storage review',
+ '2026-02-14','February','2026-02-14 09:15:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','PPE Cabinet Cleanliness',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.93,'PPE stored correctly inside clean, labeled cabinets.',
+ 'English','Malaysia','APAC','audit.kl@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-FI-671','Stellantis Helsinki East','Cold-climate sales and service dealership',
+ 'Washroom hygiene inspection',
+ '2026-02-14','February','2026-02-14 09:30:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Hygiene','Customer Washroom Cleanliness',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.90,'Washroom surfaces appear clean and dry.',
+ 'English','Finland','EMEA','audit.helsinki@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-FI-671','Stellantis Helsinki East','Cold-climate sales and service dealership',
+ 'Waste area audit',
+ '2026-02-14','February','2026-02-14 09:45:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Collection Point',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.88,'Waste bags placed outside bins and not segregated.',
+ 'English','Finland','EMEA','audit.helsinki@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-AT-311','Stellantis Vienna Süd','Passenger car showroom and service facility',
+ 'Entrance hygiene assessment',
+ '2026-02-15','February','2026-02-15 08:00:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Main Entrance Floor',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.93,'Entrance floor is clean with no dust or water marks.',
+ 'English','Austria','EMEA','audit.vienna@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-AT-311','Stellantis Vienna Süd','Passenger car showroom and service facility',
+ 'Reception counter review',
+ '2026-02-15','February','2026-02-15 08:12:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Reception Counter Surface',
+ 'https://images.unsplash.com/photo-1503387762',
+ 0.84,'Dust and document clutter observed on reception counter.',
+ 'English','Austria','EMEA','audit.vienna@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-GR-428','Stellantis Athens West','Urban sales-focused dealership',
+ 'Waiting zone audit',
+ '2026-02-15','February','2026-02-15 08:25:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Chairs',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.91,'Waiting chairs appear clean and properly arranged.',
+ 'English','Greece','EMEA','audit.athens@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-GR-428','Stellantis Athens West','Urban sales-focused dealership',
+ 'Washroom inspection',
+ '2026-02-15','February','2026-02-15 08:40:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Basin Area',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.89,'Water splashes and residue detected near wash basins.',
+ 'English','Greece','EMEA','audit.athens@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-PH-594','Stellantis Manila North','High-traffic metro dealership',
+ 'Service bay inspection',
+ '2026-02-15','February','2026-02-15 09:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Floor Cleanliness',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.92,'Oil stains and debris detected near service lift.',
+ 'English','Philippines','APAC','audit.manila@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-PH-594','Stellantis Manila North','High-traffic metro dealership',
+ 'Tool storage review',
+ '2026-02-15','February','2026-02-15 09:15:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Workshop','Tool Cabinet Organization',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.90,'Tool cabinets are clean and properly labeled.',
+ 'English','Philippines','APAC','audit.manila@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-CO-733','Stellantis Bogotá Central','Multi-brand sales and service hub',
+ 'Waste handling audit',
+ '2026-02-15','February','2026-02-15 09:30:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Disposal Area',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.87,'Waste bags placed outside bins with no segregation.',
+ 'English','Colombia','LATAM','audit.bogota@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-CO-733','Stellantis Bogotá Central','Multi-brand sales and service hub',
+ 'Parking area inspection',
+ '2026-02-15','February','2026-02-15 09:45:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Customer Parking Slots',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.91,'Parking slots are clean with no oil or trash visible.',
+ 'English','Colombia','LATAM','audit.bogota@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-KE-862','Stellantis Nairobi West','Regional sales and service dealership',
+ 'Staff area audit',
+ '2026-02-15','February','2026-02-15 10:00:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Hygiene','Staff Locker Area',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.85,'Open lockers and clothing observed on the floor.',
+ 'English','Kenya','MEA','audit.nairobi@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-KE-862','Stellantis Nairobi West','Regional sales and service dealership',
+ 'Emergency route inspection',
+ '2026-02-15','February','2026-02-15 10:15:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','Emergency Exit Pathway',
+ 'https://images.unsplash.com/photo-1581091215367',
+ 0.94,'Emergency exit path is clear and unobstructed.',
+ 'English','Kenya','MEA','audit.nairobi@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-HU-901','Stellantis Budapest Central','Passenger vehicle sales and service center',
+ 'Showroom entrance audit','2026-02-16','February','2026-02-16 08:00:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Showroom Entrance Floor',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.94,'Entrance flooring is clean with no visible dust.',
+ 'English','Hungary','EMEA','audit.budapest@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-HU-901','Stellantis Budapest Central','Passenger vehicle sales and service center',
+ 'Reception hygiene review','2026-02-16','February','2026-02-16 08:10:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Reception Desk Surface',
+ 'https://images.unsplash.com/photo-1503387762',
+ 0.85,'Dust and paper clutter detected on reception desk.',
+ 'English','Hungary','EMEA','audit.budapest@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-RO-615','Stellantis Bucharest North','Urban car dealership',
+ 'Waiting area inspection','2026-02-16','February','2026-02-16 08:20:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Seating',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.92,'Seating area appears clean and well maintained.',
+ 'English','Romania','EMEA','audit.bucharest@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-RO-615','Stellantis Bucharest North','Urban car dealership',
+ 'Washroom hygiene audit','2026-02-16','February','2026-02-16 08:30:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Floor',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.88,'Wet floor and stains detected near wash basins.',
+ 'English','Romania','EMEA','audit.bucharest@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-CZ-742','Stellantis Prague West','Sales-focused dealership',
+ 'Glass maintenance audit','2026-02-16','February','2026-02-16 08:40:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Panels',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.93,'Glass panels are clear with no smudges.',
+ 'English','Czech Republic','EMEA','audit.prague@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-CZ-742','Stellantis Prague West','Sales-focused dealership',
+ 'Pantry hygiene check','2026-02-16','February','2026-02-16 08:50:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Staff Pantry Counter',
+ 'https://images.unsplash.com/photo-1493770348161',
+ 0.87,'Food spills and crumbs observed on counter.',
+ 'English','Czech Republic','EMEA','audit.prague@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-EG-388','Stellantis Cairo East','High-volume urban dealership',
+ 'Service bay audit','2026-02-16','February','2026-02-16 09:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Oil Stains',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.91,'Oil stains detected near service lift.',
+ 'English','Egypt','MEA','audit.cairo@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-EG-388','Stellantis Cairo East','High-volume urban dealership',
+ 'Tool organization review','2026-02-16','February','2026-02-16 09:10:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Workshop','Tool Rack Cleanliness',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.92,'Tools are organized and free of grease.',
+ 'English','Egypt','MEA','audit.cairo@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-PE-554','Stellantis Lima Sur','Multi-brand sales and service hub',
+ 'Waste handling audit','2026-02-16','February','2026-02-16 09:20:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Collection Area',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.89,'Waste bags placed outside designated bins.',
+ 'English','Peru','LATAM','audit.lima@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-PE-554','Stellantis Lima Sur','Multi-brand sales and service hub',
+ 'Parking cleanliness audit','2026-02-16','February','2026-02-16 09:30:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Customer Parking Area',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.93,'Parking area is clean and free of debris.',
+ 'English','Peru','LATAM','audit.lima@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-TN-667','Stellantis Tunis Central','Regional dealership and service center',
+ 'Locker area inspection','2026-02-16','February','2026-02-16 09:40:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Hygiene','Staff Locker Area',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.85,'Open lockers and items scattered on floor.',
+ 'English','Tunisia','MEA','audit.tunis@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-TN-667','Stellantis Tunis Central','Regional dealership and service center',
+ 'Emergency exit audit','2026-02-16','February','2026-02-16 09:50:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','Emergency Exit Pathway',
+ 'https://images.unsplash.com/photo-1581091215367',
+ 0.94,'Exit pathway is clear and unobstructed.',
+ 'English','Tunisia','MEA','audit.tunis@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-VN-812','Stellantis Ho Chi Minh East','Metro-area dealership',
+ 'Showroom seating audit','2026-02-16','February','2026-02-16 10:00:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Showroom Seating',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.92,'Customer seating appears clean and orderly.',
+ 'English','Vietnam','APAC','audit.hcmc@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-VN-812','Stellantis Ho Chi Minh East','Metro-area dealership',
+ 'Washroom inspection','2026-02-16','February','2026-02-16 10:10:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Washroom Sink Area',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.88,'Water splashes and stains visible near sinks.',
+ 'English','Vietnam','APAC','audit.hcmc@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-SG-933','Stellantis Singapore West','Premium urban showroom',
+ 'Glass door hygiene audit','2026-02-16','February','2026-02-16 10:20:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Doors',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.86,'Fingerprints and smudges detected on glass doors.',
+ 'English','Singapore','APAC','audit.singapore@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-SG-933','Stellantis Singapore West','Premium urban showroom',
+ 'Entrance floor audit','2026-02-16','February','2026-02-16 10:30:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Entrance Floor Area',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.95,'Entrance floor is spotless and dry.',
+ 'English','Singapore','APAC','audit.singapore@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MA-774','Stellantis Casablanca South','High-capacity service dealership',
+ 'Workshop aisle audit','2026-02-16','February','2026-02-16 10:40:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Workshop Aisle Obstruction',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.91,'Tools and parts obstructing workshop aisle.',
+ 'English','Morocco','MEA','audit.casablanca@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MA-774','Stellantis Casablanca South','High-capacity service dealership',
+ 'PPE storage audit','2026-02-16','February','2026-02-16 10:50:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','PPE Storage Cabinet',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.93,'PPE stored neatly inside clean cabinets.',
+ 'English','Morocco','MEA','audit.casablanca@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-HK-889','Stellantis Hong Kong Central','Compact high-rise dealership',
+ 'Waste segregation audit','2026-02-16','February','2026-02-16 11:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Segregation Area',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.90,'Mixed waste observed without segregation.',
+ 'English','Hong Kong','APAC','audit.hk@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-HK-889','Stellantis Hong Kong Central','Compact high-rise dealership',
+ 'Parking ramp audit','2026-02-16','February','2026-02-16 11:10:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Parking Ramp Cleanliness',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.94,'Parking ramp is clean with no oil stains.',
+ 'English','Hong Kong','APAC','audit.hk@stellantis.com','hashed_pwd',now(),now()
+), 'Level 3 - Minor','Cleanliness','Entrance Floor Tiles',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.94,'Entrance floor tiles are clean and dry.',
+ 'English','Estonia','EMEA','audit.tallinn@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-EE-201','Stellantis Tallinn Central','Passenger vehicle sales and service facility',
+ 'Reception surface inspection','2026-02-18','February','2026-02-18 08:10:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Reception Desk Surface',
+ 'https://images.unsplash.com/photo-1503387762',
+ 0.86,'Dust and document clutter detected on reception desk.',
+ 'English','Estonia','EMEA','audit.tallinn@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-HR-318','Stellantis Zagreb West','Urban sales-focused dealership',
+ 'Waiting area audit','2026-02-18','February','2026-02-18 08:20:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Seating',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.92,'Waiting seats are clean and well arranged.',
+ 'English','Croatia','EMEA','audit.zagreb@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-HR-318','Stellantis Zagreb West','Urban sales-focused dealership',
+ 'Washroom hygiene check','2026-02-18','February','2026-02-18 08:30:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Floor',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.89,'Wet floor and stains detected near wash basin.',
+ 'English','Croatia','EMEA','audit.zagreb@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-BG-447','Stellantis Sofia North','Passenger car sales showroom',
+ 'Glass surface audit','2026-02-18','February','2026-02-18 08:40:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Panels',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.93,'Glass panels are clean with no visible smudges.',
+ 'English','Bulgaria','EMEA','audit.sofia@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-BG-447','Stellantis Sofia North','Passenger car sales showroom',
+ 'Pantry hygiene inspection','2026-02-18','February','2026-02-18 08:50:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Staff Pantry Counter',
+ 'https://images.unsplash.com/photo-1493770348161',
+ 0.87,'Food spills and crumbs detected on pantry counter.',
+ 'English','Bulgaria','EMEA','audit.sofia@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-LB-509','Stellantis Beirut Central','Compact urban dealership',
+ 'Service bay audit','2026-02-18','February','2026-02-18 09:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Oil Spillage',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.91,'Oil spillage detected near vehicle lift.',
+ 'English','Lebanon','MEA','audit.beirut@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-LB-509','Stellantis Beirut Central','Compact urban dealership',
+ 'Tool storage review','2026-02-18','February','2026-02-18 09:10:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Workshop','Tool Rack Organization',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.93,'Tools are neatly arranged and clean.',
+ 'English','Lebanon','MEA','audit.beirut@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-JO-623','Stellantis Amman West','Regional sales and service hub',
+ 'Waste handling audit','2026-02-18','February','2026-02-18 09:20:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Disposal Area',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.88,'Waste bags placed outside bins.',
+ 'English','Jordan','MEA','audit.amman@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-JO-623','Stellantis Amman West','Regional sales and service hub',
+ 'Parking inspection','2026-02-18','February','2026-02-18 09:30:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Customer Parking Area',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.94,'Parking area is clean with no debris.',
+ 'English','Jordan','MEA','audit.amman@stellantis.com','hashed_pwd',now(),now()
+),
+
+-- 11–20
+(
+ 'DLR-TZ-734','Stellantis Dar es Salaam North','High-traffic service dealership',
+ 'Locker room inspection','2026-02-18','February','2026-02-18 09:40:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Hygiene','Staff Locker Area',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.85,'Open lockers and clothing scattered on floor.',
+ 'English','Tanzania','MEA','audit.dar@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-TZ-734','Stellantis Dar es Salaam North','High-traffic service dealership',
+ 'Emergency exit audit','2026-02-18','February','2026-02-18 09:50:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','Emergency Exit Pathway',
+ 'https://images.unsplash.com/photo-1581091215367',
+ 0.95,'Exit path is clear and accessible.',
+ 'English','Tanzania','MEA','audit.dar@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-KH-845','Stellantis Phnom Penh Central','Urban passenger dealership',
+ 'Showroom seating audit','2026-02-18','February','2026-02-18 10:00:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Showroom Seating',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.92,'Customer seating is clean and well aligned.',
+ 'English','Cambodia','APAC','audit.pp@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-KH-845','Stellantis Phnom Penh Central','Urban passenger dealership',
+ 'Washroom inspection','2026-02-18','February','2026-02-18 10:10:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Washroom Sink Area',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.88,'Water splashes and stains visible near sinks.',
+ 'English','Cambodia','APAC','audit.pp@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-LA-916','Stellantis Vientiane East','Compact city dealership',
+ 'Glass door audit','2026-02-18','February','2026-02-18 10:20:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Doors',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.86,'Fingerprints and smudges detected on glass doors.',
+ 'English','Laos','APAC','audit.vientiane@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-LA-916','Stellantis Vientiane East','Compact city dealership',
+ 'Entrance inspection','2026-02-18','February','2026-02-18 10:30:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Entrance Walkway',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.95,'Entrance walkway is clean and dry.',
+ 'English','Laos','APAC','audit.vientiane@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-SN-108','Stellantis Dakar South','Regional dealership facility',
+ 'Workshop aisle audit','2026-02-18','February','2026-02-18 10:40:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Workshop Aisle Obstruction',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.90,'Tools obstructing workshop aisle.',
+ 'English','Senegal','MEA','audit.dakar@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-SN-108','Stellantis Dakar South','Regional dealership facility',
+ 'PPE storage audit','2026-02-18','February','2026-02-18 10:50:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','PPE Storage Cabinet',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.93,'PPE stored neatly in clean cabinets.',
+ 'English','Senegal','MEA','audit.dakar@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MN-229','Stellantis Ulaanbaatar Central','Cold-climate dealership',
+ 'Waste segregation audit','2026-02-18','February','2026-02-18 11:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Segregation Zone',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.89,'Mixed waste observed without segregation.',
+ 'English','Mongolia','APAC','audit.ulaan@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MN-229','Stellantis Ulaanbaatar Central','Cold-climate dealership',
+ 'Parking ramp audit','2026-02-18','February','2026-02-18 11:10:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Parking Ramp Cleanliness',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.94,'Parking ramp is clean with no oil stains.',
+ 'English','Mongolia','APAC','audit.ulaan@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-IS-401','Stellantis Reykjavik Central','Cold-climate passenger vehicle dealership',
+ 'Entrance hygiene audit','2026-02-19','February','2026-02-19 08:00:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Entrance Floor Mats',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.95,'Entrance mats are clean with no snow or moisture residue.',
+ 'English','Iceland','EMEA','audit.reykjavik@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-IS-401','Stellantis Reykjavik Central','Cold-climate passenger vehicle dealership',
+ 'Reception desk inspection','2026-02-19','February','2026-02-19 08:10:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Reception Desk Hygiene',
+ 'https://images.unsplash.com/photo-1503387762',
+ 0.86,'Dust and paperwork clutter detected on reception desk.',
+ 'English','Iceland','EMEA','audit.reykjavik@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-AL-522','Stellantis Tirana West','Urban sales-focused dealership',
+ 'Waiting area audit','2026-02-19','February','2026-02-19 08:20:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Waiting Area Seating',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.92,'Waiting seats appear clean and properly arranged.',
+ 'English','Albania','EMEA','audit.tirana@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-AL-522','Stellantis Tirana West','Urban sales-focused dealership',
+ 'Washroom inspection','2026-02-19','February','2026-02-19 08:30:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Customer Washroom Floor',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.88,'Wet floor and stains observed near wash basins.',
+ 'English','Albania','EMEA','audit.tirana@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MT-633','Stellantis Valletta South','Compact island dealership',
+ 'Glass surface audit','2026-02-19','February','2026-02-19 08:40:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Panels',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.93,'Glass panels are clear with no fingerprints detected.',
+ 'English','Malta','EMEA','audit.valletta@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-MT-633','Stellantis Valletta South','Compact island dealership',
+ 'Pantry hygiene audit','2026-02-19','February','2026-02-19 08:50:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Staff Pantry Counter',
+ 'https://images.unsplash.com/photo-1493770348161',
+ 0.87,'Food crumbs and liquid spills detected on pantry counter.',
+ 'English','Malta','EMEA','audit.valletta@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-NP-744','Stellantis Kathmandu Central','Mountain-region dealership',
+ 'Service bay inspection','2026-02-19','February','2026-02-19 09:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Service Bay Oil Leakage',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.91,'Oil leakage observed beneath active service lift.',
+ 'English','Nepal','APAC','audit.kathmandu@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-NP-744','Stellantis Kathmandu Central','Mountain-region dealership',
+ 'Tool organization audit','2026-02-19','February','2026-02-19 09:10:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Workshop','Tool Rack Organization',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.93,'Tools are properly arranged and free of grease.',
+ 'English','Nepal','APAC','audit.kathmandu@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-UY-855','Stellantis Montevideo East','Multi-brand sales and service hub',
+ 'Waste handling audit','2026-02-19','February','2026-02-19 09:20:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Disposal Zone',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.89,'Waste bags placed outside designated bins.',
+ 'English','Uruguay','LATAM','audit.montevideo@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-UY-855','Stellantis Montevideo East','Multi-brand sales and service hub',
+ 'Parking inspection','2026-02-19','February','2026-02-19 09:30:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Customer Parking Bays',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.94,'Parking bays are clean with no oil stains.',
+ 'English','Uruguay','LATAM','audit.montevideo@stellantis.com','hashed_pwd',now(),now()
+),
+
+-- 11–20
+(
+ 'DLR-BD-966','Stellantis Dhaka North','High-density urban dealership',
+ 'Locker area audit','2026-02-19','February','2026-02-19 09:40:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Hygiene','Staff Locker Area',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.85,'Open lockers and personal items scattered on floor.',
+ 'English','Bangladesh','APAC','audit.dhaka@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-BD-966','Stellantis Dhaka North','High-density urban dealership',
+ 'Emergency exit inspection','2026-02-19','February','2026-02-19 09:50:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','Emergency Exit Pathway',
+ 'https://images.unsplash.com/photo-1581091215367',
+ 0.95,'Emergency exit pathway is clear and accessible.',
+ 'English','Bangladesh','APAC','audit.dhaka@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-BO-107','Stellantis La Paz Central','High-altitude dealership facility',
+ 'Showroom seating audit','2026-02-19','February','2026-02-19 10:00:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Showroom Seating',
+ 'https://images.unsplash.com/photo-1554995207',
+ 0.92,'Customer seating appears clean and well aligned.',
+ 'English','Bolivia','LATAM','audit.lapaz@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-BO-107','Stellantis La Paz Central','High-altitude dealership facility',
+ 'Washroom inspection','2026-02-19','February','2026-02-19 10:10:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Washroom Sink Area',
+ 'https://images.unsplash.com/photo-1582719478185',
+ 0.88,'Water splashes and stains visible near sinks.',
+ 'English','Bolivia','LATAM','audit.lapaz@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-GH-218','Stellantis Accra West','Regional sales and service dealership',
+ 'Glass door audit','2026-02-19','February','2026-02-19 10:20:00','Morning Shift','Non-Compliant',
+ 'Level 2 - Major','Cleanliness','Showroom Glass Doors',
+ 'https://images.unsplash.com/photo-1524758631624',
+ 0.86,'Smudges and fingerprints detected on glass doors.',
+ 'English','Ghana','MEA','audit.accra@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-GH-218','Stellantis Accra West','Regional sales and service dealership',
+ 'Entrance audit','2026-02-19','February','2026-02-19 10:30:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Entrance Walkway',
+ 'https://images.unsplash.com/photo-1523413651479',
+ 0.95,'Entrance walkway is clean and free of debris.',
+ 'English','Ghana','MEA','audit.accra@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-KZ-329','Stellantis Almaty Central','Cold-region dealership facility',
+ 'Workshop aisle audit','2026-02-19','February','2026-02-19 10:40:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Workshop','Workshop Aisle Obstruction',
+ 'https://images.unsplash.com/photo-1581092580497',
+ 0.90,'Parts and tools obstructing workshop aisle.',
+ 'English','Kazakhstan','APAC','audit.almaty@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-KZ-329','Stellantis Almaty Central','Cold-region dealership facility',
+ 'PPE storage audit','2026-02-19','February','2026-02-19 10:50:00','Morning Shift','Compliant',
+ 'Level 2 - Major','Safety','PPE Storage Cabinet',
+ 'https://images.unsplash.com/photo-1584467735871',
+ 0.93,'PPE stored neatly in labeled cabinets.',
+ 'English','Kazakhstan','APAC','audit.almaty@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-SL-440','Stellantis Freetown Central','Coastal dealership facility',
+ 'Waste segregation audit','2026-02-19','February','2026-02-19 11:00:00','Morning Shift','Non-Compliant',
+ 'Level 1 - Critical','Hygiene','Waste Segregation Area',
+ 'https://images.unsplash.com/photo-1581578731548',
+ 0.89,'Mixed waste observed without segregation.',
+ 'English','Sierra Leone','MEA','audit.freetown@stellantis.com','hashed_pwd',now(),now()
+),
+(
+ 'DLR-SL-440','Stellantis Freetown Central','Coastal dealership facility',
+ 'Parking ramp audit','2026-02-19','February','2026-02-19 11:10:00','Morning Shift','Compliant',
+ 'Level 3 - Minor','Cleanliness','Parking Ramp Cleanliness',
+ 'https://images.unsplash.com/photo-1502877338535',
+ 0.94,'Parking ramp is clean with no oil stains.',
+ 'English','Sierra Leone','MEA','audit.freetown@stellantis.com','hashed_pwd',now(),now()
+),

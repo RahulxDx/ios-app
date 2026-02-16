@@ -1,0 +1,26 @@
+[Unit]
+Description=Stellantis Dealer Hygiene Backend API
+After=network.target
+
+[Service]
+Type=notify
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/home/ec2-user/backend
+Environment="PATH=/home/ec2-user/backend/venv/bin"
+ExecStart=/home/ec2-user/backend/venv/bin/gunicorn src.main:app \
+    --worker-class uvicorn.workers.UvicornWorker \
+    --workers 4 \
+    --bind 0.0.0.0:8000 \
+    --timeout 120 \
+    --access-logfile /home/ec2-user/backend/logs/access.log \
+    --error-logfile /home/ec2-user/backend/logs/error.log \
+    --log-level info
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
